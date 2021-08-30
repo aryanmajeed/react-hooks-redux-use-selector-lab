@@ -9,9 +9,9 @@ function Users() {
     <div>
       <ul>
         Users!
-        {users.map((user)=><p key={user}>{user.username}-{user.hometown}</p>)}
+        {users.map((user,index)=><p key={index}>{user.username}-{user.hometown}</p>)}      <div>Total Users: {" "+users.length}</div>
+
       </ul>
-      <div>Total Users: {" "+users.length}</div>
 
     </div>
   );
